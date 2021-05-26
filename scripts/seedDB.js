@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const db = require("../models");
+require('dotenv').config();
 
 // This file empties the Visitors collection and inserts the visitors below
 
@@ -19,7 +20,7 @@ const visitorSeed = [
 
 db.Visitor
   .remove({})
-  .then(() => db.Visitor.collection.insertMany(VisitorSeed))
+  .then(() => db.Visitor.collection.insertMany(visitorSeed))
   .then(data => {
     console.log(data.result.n + " records inserted!");
     process.exit(0);
