@@ -27,3 +27,18 @@
   .fab-linkedin {
     background: #007bb5;
   }
+
+  footer {
+    width: auto;
+    max-width: 100vw;
+    margin-top: 100px;
+    /* padding: 0 15px; */
+    text-align: center;
+  }
+
+  .container-footer {
+    width: auto;
+    max-width: 100vw;
+    padding: 0 15px;
+    text-align: center;
+  }

@@ -1,9 +1,11 @@
 import React from "react";
+import Container from "../Container"
+
 import "./style.css";
 
 function Footer() {
   return (
-    <footer className="footer mt-auto py-3 bg-light">
+   <Container className = {'footer mt-auto py-3 bg-light fixed-bottom'}>
       <div className="container-footer">
         <div className="footer-social-icons">
           <a
@@ -20,7 +22,7 @@ function Footer() {
           ></a>
         </div>
       </div>
-    </footer>
+      </Container>
   );
 }
 

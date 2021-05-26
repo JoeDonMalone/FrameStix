@@ -5,7 +5,7 @@ import Image from "../components/Images";
 // import DownloadLink from '.'
 import "../components/Nav";
 import ImageOne from "../assets/images/Image1.jpg";
-import Container from "../components/Container"
+import ImageTwo from "../assets/images/Image2.jpg";
 import ImageThree from "../assets/images/Image3.jpg";
 import Footer from "../components/Footer";
 import Resume from "../assets/Joe_Malone_Resume.pdf";
@@ -24,7 +24,6 @@ import "./style.css";
 function Home() {
   return (
     <>
-    <Container style = {{marginBottom:"20px"}} >
       <div className="container">
         <div className="row buffer">
           <Image
@@ -38,6 +37,7 @@ function Home() {
               <p className="hello-there">
                 Hello there,
                 <br /> I'm Joe.
+                <br />
                 <br />
               </p>
             </div>
@@ -60,7 +60,7 @@ function Home() {
             </p>
           </div>
           <div className="col-sm-6 greeting skills-container">
-            <div className=" row skills-row top">
+            <div className=" row skills-row ">
               <div className="col skills-col">
                 <SiJavascript className="skills-icon"></SiJavascript>
                 <h6>Javascript</h6>
@@ -110,10 +110,7 @@ function Home() {
           ></Image>
         </div>
       </div>
-      </Container>
-          <footer></footer>
       <Footer />
-      
     </>
   );
 }

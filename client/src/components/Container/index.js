@@ -6,7 +6,7 @@ import './style.css'
 
 function Container(props) {
     return (
-        <div className = {props.className}>
+        <div className = {props.className} style= {props.style}>{props.children}
         </div>
     )
 }
