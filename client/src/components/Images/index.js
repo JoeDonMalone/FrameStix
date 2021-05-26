@@ -4,11 +4,12 @@ import "./style.css";
 
 function Image(props) {
   return (
-    <div className={`col-sm-6 ${props.className}`}>
+    <div className={`${props.className}`}>
       <img
         className="rounded float-start img-thumbnail"
         src={props.src}
         alt={props.alt}
+        style={props.style}
       />
     </div>
   );

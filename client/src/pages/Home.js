@@ -28,7 +28,7 @@ function Home() {
         <div className="container">
           <div className="row buffer">
               <Image
-                className={"image-one"}
+                className={"col-sm-6 image-one"}
                 src={ImageOne}
                 alt={"Ruggedly handsome young man by the name of Joe Malone"}
               ></Image>
@@ -53,7 +53,7 @@ function Home() {
                 >
                   Resume
                 </a>
-                <a className="get-in-touch button" href="/FrameStix/contact">
+                <a className="get-in-touch button" href="/FrameStix/contact/">
                   Get In Touch
                 </a>
               </p>
@@ -104,15 +104,15 @@ function Home() {
               </div>
             </div>
             <Image
-              className={"image-three"}
+              className={"col-sm-6 image-three"}
               src={ImageThree}
               alt="Picutre of a ruggedly handsome young man by the name of Joe Malone"
             ></Image>
           </div>
         </div>
       </Container>
-      <footer></footer>
-      <Footer />
+      <footer><Footer /></footer>
+      
     </>
   );
 }

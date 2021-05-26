@@ -25,12 +25,12 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li>
-                <a className="dropdown-item" href="/FrameStix/story">
+                <a className="dropdown-item" href="/FrameStix/story/">
                   My Story
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="/FrameStix/contact">
+                <a className="dropdown-item" href="/FrameStix/contact/">
                   Get in Touch
                 </a>
               </li>
@@ -47,7 +47,7 @@ function Nav() {
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="/FrameStix/portfolio">
+                <a className="dropdown-item" href="/FrameStix/highlights/">
                   Highlights
                 </a>
               </li>
