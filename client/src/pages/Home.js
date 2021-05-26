@@ -17,9 +17,9 @@ import { GrMysql } from "react-icons/gr";
 import { GiJesterHat } from "react-icons/gi";
 import { SiMicrosoftazure } from "react-icons/si";
 import { SiJavascript } from "react-icons/si";
+import { SiJquery } from "react-icons/si";
 import { IoCloudUploadOutline } from "react-icons/io5";
 import "./style.css";
-
 
 function Home() {
   return (
@@ -31,6 +31,7 @@ function Home() {
             src={ImageOne}
             alt={"Ruggedly handsome young man by the name of Joe Malone"}
           ></Image>
+
           <div className="col-sm-6 greeting">
             <div className="hello">
               <p className="hello-there">
@@ -62,33 +63,43 @@ function Home() {
             <div className=" row skills-row ">
               <div className="col skills-col">
                 <SiJavascript className="skills-icon"></SiJavascript>
+                <h6>Javascript</h6>
               </div>
               <div className="col skills-col">
                 <FaNode className="skills-icon"></FaNode>
+                <h6>NodeJs</h6>
               </div>
               <div className="col skills-col">
                 <FaReact className="skills-icon"></FaReact>
+                <h6>React</h6>
               </div>
             </div>
             <div className=" row skills-row ">
               <div className="col skills-col">
                 <FaPython className="skills-icon"></FaPython>
+                <h6>Python</h6>
               </div>
-              <div className="col skills-col"><IoCloudUploadOutline className = "skills-icon"/>
+              <div className="col skills-col">
+                <IoCloudUploadOutline className="skills-icon" />
+                {/* <h6>Cloud</h6> */}
               </div>
               <div className="col skills-col">
                 <GiJesterHat className="skills-icon"></GiJesterHat>
+                <h6>Jest</h6>
               </div>
             </div>
             <div className=" row skills-row ">
               <div className="col skills-col">
                 <GrMysql className="skills-icon"></GrMysql>
+                <h6>MySQL</h6>
               </div>
               <div className="col skills-col">
-                <FaNodeJs className="skills-icon"></FaNodeJs>
+                <SiJquery className="skills-icon"></SiJquery>
+                <h6>JQuery</h6>
               </div>
               <div className="col skills-col">
                 <SiMicrosoftazure className="skills-icon"></SiMicrosoftazure>
+                <h6>Azure</h6>
               </div>
             </div>
           </div>

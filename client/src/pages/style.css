@@ -9,9 +9,10 @@
 }
 
 .skills-col {
-    display:flex;
-    /* flex-direction: column; */
-    justify-content:center !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center;
 }
 
 .skills-row {

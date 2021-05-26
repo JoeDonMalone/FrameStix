@@ -7,7 +7,7 @@ function Nav() {
     <header>
       <nav className="navbar navbar fixed-top navbar-expand-lg navbar-light bg-light header">
         <div className="container-fluid">
-          <a className="navbar-brand" href="./index.html">
+          <a className="navbar-brand" href="/">
             Joe Don Malone
           </a>
           <button
@@ -24,12 +24,12 @@ function Nav() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
               <li>
-                <a className="dropdown-item" href="./story.html">
+                <a className="dropdown-item" href="/story">
                   My Story
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="./contact.html">
+                <a className="dropdown-item" href="/contact">
                   Get in Touch
                 </a>
               </li>
@@ -46,7 +46,7 @@ function Nav() {
                 </a>
               </li>
               <li>
-                <a className="dropdown-item" href="./portfolio.html">
+                <a className="dropdown-item" href="/portfolio">
                   Highlights
                 </a>
               </li>
