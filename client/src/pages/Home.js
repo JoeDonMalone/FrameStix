@@ -28,7 +28,7 @@ function Home() {
         <div className="container">
           <div className="row buffer">
               <Image
-                className={"col-sm-6 image-one"}
+                className={"col-sm-6 image-one "}
                 src={ImageOne}
                 alt={"Ruggedly handsome young man by the name of Joe Malone"}
               ></Image>
@@ -49,6 +49,7 @@ function Home() {
               <p id="get-in-touch-button">
                 <a
                   className="get-in-touch button"
+                  download="Joe_Malone_Resume.pdf"
                   href="././Assets/Joe_Malone_Resume.pdf"
                 >
                   Resume
@@ -104,7 +105,7 @@ function Home() {
               </div>
             </div>
             <Image
-              className={"col-sm-6 image-three"}
+              className={"col-sm-6 image-three .col-auto"}
               src={ImageThree}
               alt="Picutre of a ruggedly handsome young man by the name of Joe Malone"
             ></Image>
