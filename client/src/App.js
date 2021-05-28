@@ -6,6 +6,9 @@ import Highlights from "./pages/Highlights";
 import Story from "./pages/Story";
 import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
+import Footer from "./components/Footer";
+import './components/Footer/style.css'
+
 
 function App() {
   return (
@@ -17,10 +20,11 @@ function App() {
           <Route exact path="/FrameStix/contact/" component={Contact} />
           <Route exact path="/FrameStix/highlights/" component={Highlights} />
           <Route exact path="/FrameStix/story/" component={Story} />
-          <Route>
-            <NoMatch />
-          </Route>
+          <Route><NoMatch /></Route>
         </Switch>
+        <footer>
+        <Footer/>
+        </footer>
       </div>
     </Router>
   );

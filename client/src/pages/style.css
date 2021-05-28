@@ -7,6 +7,14 @@ body {
 .container {
   font-family: 'Varela Round', sans-serif;
 }
+
+.preview-container-holder{
+  display:flex;
+  justify-content: center;
+}
+
+
+
 .get-in-touch {
   display: inline-block;
   justify-content: right;

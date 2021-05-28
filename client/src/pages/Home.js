@@ -8,8 +8,6 @@ import ImageOne from "../assets/images/Image1.jpg";
 import Container from "../components/Container";
 import ImageThree from "../assets/images/Image3.jpg";
 import Footer from "../components/Footer";
-import Resume from "../assets/Joe_Malone_Resume.pdf";
-import { FaNodeJs } from "react-icons/fa";
 import { FaNode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
@@ -111,9 +109,7 @@ function Home() {
             ></Image>
           </div>
         </div>
-      </Container>
-      <footer><Footer /></footer>
-      
+      </Container>  
     </>
   );
 }
