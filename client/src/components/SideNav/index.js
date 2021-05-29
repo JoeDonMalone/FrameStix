@@ -15,7 +15,7 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import LockIcon from "@material-ui/icons/Lock";
 import ExploreIcon from "@material-ui/icons/Explore";
-// import './style.css'
+import './style.css'
 
 const drawerWidth = 240;
 

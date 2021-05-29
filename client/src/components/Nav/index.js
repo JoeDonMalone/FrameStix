@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 import { Link } from "react-router-dom"; 
-{/* <link rel="stylesheet" href="./style.css" />; */}
+// {/* <link rel="stylesheet" href="./style.css" />;
 {
   /* <Link to="/FrameStix"></Link> */
 }

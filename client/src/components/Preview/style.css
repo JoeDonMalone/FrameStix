@@ -1,3 +1,7 @@
+#root{
+  background: rgb(214 215 216 / 50%);
+}
+
 .preview-container {
   flex-direction: column;
   /* border: 2px solid black; */
@@ -36,3 +40,4 @@
   border-radius: 10px;
   overflow: hidden;
 }
+

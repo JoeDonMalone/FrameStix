@@ -4,7 +4,7 @@
     height: 100%;
     display: flex;
     outline: 0;
-    z-index: -1200 !important;
+    z-index: 1 !important;
     position: fixed;
     overflow-y: auto;
     flex-direction: column;
