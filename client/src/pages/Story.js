@@ -1,24 +1,25 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Link } from "react-router-dom";
 import Image from "../components/Images";
 import "../components/Nav";
 import ImageOne from "../assets/images/Image1.jpg";
 import Container from "../components/Container";
-import Footer from "../components/Footer";
 import "./style.css";
 
 function Home() {
   return (
     <>
-      <Container className={"container"} style={{ marginBottom: "20px" }}>
+      <Container className={"d-flex flex-column min-vh-100"} style={{ marginBottom: "20px" }}>
+        <div className = "container">
         <section className="the-story">
           <h1>The Story</h1>
           <div className="col-xs-12">
             <Image
-              className={"rounded float-start img-thumbnail story-image"}
+              className={"story-img"}
+              containerStyle={{paddingLeft: "0px"}}
               src={ImageOne}
-              alt={"Ruggedly handsome young man by the name of Joe Malone"}
+              floatPosition={"float-start"}
+              imageStyle={{marginRight:"20px"}}
+              alt="Picutre of a ruggedly handsome young man by the name of Joe Malone"
             ></Image>
 
             <p className="about-me-text">
@@ -59,10 +60,8 @@ function Home() {
             </p>
           </div>
         </section>
+        </div>
       </Container>
-      <footer>
-        <Footer />
-      </footer>
     </>
   );
 }

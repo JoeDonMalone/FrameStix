@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, Route } from "react-router-dom";
 import PropTypes from "prop-types";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
@@ -10,14 +9,11 @@ import ListItem from "@material-ui/core/ListItem";
 import ListItemIcon from "@material-ui/core/ListItemIcon";
 import ListItemText from "@material-ui/core/ListItemText";
 import { makeStyles, useTheme } from "@material-ui/core/styles";
-import { CgBee } from "react-icons/cg";
 import CloudIcon from "@material-ui/icons/Cloud";
 import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import LockIcon from "@material-ui/icons/Lock";
 import ExploreIcon from "@material-ui/icons/Explore";
-import Button from "@material-ui/core/Button";
-
 import "./style.css";
 
 const drawerWidth = 240;
