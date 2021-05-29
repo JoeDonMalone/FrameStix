@@ -22,9 +22,7 @@ function App() {
           <Route exact path="/FrameStix/story/" component={Story} />
           <Route><NoMatch /></Route>
         </Switch>
-        <footer>
         <Footer/>
-        </footer>
       </div>
     </Router>
   );

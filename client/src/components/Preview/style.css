@@ -1,11 +1,10 @@
-#root{
-  background: rgb(214 215 216 / 50%);
-}
+
 
 .preview-container {
   flex-direction: column;
   /* border: 2px solid black; */
   min-height: 600px;
+  min-width: fit-content;
   max-width: 600px;
   
 }
@@ -41,3 +40,10 @@
   overflow: hidden;
 }
 
+@media only screen and (max-width: 800px) {
+  .preview-container-holder {
+    justify-content: flex-end;
+    margin-right: 0%;
+    flex-wrap: wrap;
+  }
+}

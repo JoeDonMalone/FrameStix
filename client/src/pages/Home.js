@@ -22,14 +22,17 @@ import "./style.css";
 function Home() {
   return (
     <>
-      <Container style={{ marginBottom: "20px" }}>
+      <Container className = {'home-container'}>
         <div className="container">
           <div className="row buffer">
-              <Image
-                className={"col-sm-6 image-one "}
-                src={ImageOne}
-                alt={"Ruggedly handsome young man by the name of Joe Malone"}
-              ></Image>
+            <Image
+              className={"col-sm-6 image-one"}
+              containerStyle={{paddingLeft: "0px"}}
+              src={ImageOne}
+              floatPosition={"float-start"}
+              imageStyle={{marginRight:"0px"}}
+              alt="Picutre of a ruggedly handsome young man by the name of Joe Malone"
+            ></Image>
             <div className="col-sm-6 greeting">
               <div className="hello">
                 <p className="hello-there">
@@ -103,9 +106,12 @@ function Home() {
               </div>
             </div>
             <Image
-              className={"col-sm-6 image-three .col-auto"}
+              className={"col-sm-6 image-three"}
+              containerStyle={{paddingRight: "0px"}}
               src={ImageThree}
-              alt="Picutre of a ruggedly handsome young man by the name of Joe Malone"
+              floatPosition={"float-end"}
+              imageStyle={{marginRight:"0px"}}
+              alt="The Malone Family celebrating the birth of their second daughter!"
             ></Image>
           </div>
         </div>

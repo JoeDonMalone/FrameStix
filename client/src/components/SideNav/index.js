@@ -1,4 +1,5 @@
 import React from "react";
+import { Link, Route } from "react-router-dom";
 import PropTypes from "prop-types";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Divider from "@material-ui/core/Divider";
@@ -15,7 +16,9 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import LockIcon from "@material-ui/icons/Lock";
 import ExploreIcon from "@material-ui/icons/Explore";
-import './style.css'
+import Button from "@material-ui/core/Button";
+
+import "./style.css";
 
 const drawerWidth = 240;
 
@@ -57,9 +60,16 @@ function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const upperIcon = [<CloudIcon />, <LockIcon />, <CgBee />];
+  const upperIcon = [<CloudIcon />, <LockIcon />];
+  const upperLink = [
+    "https://joedonmalone.github.io/WeatherBee/",
+    "https://joedonmalone.github.io/Password_Generator/",
+  ];
   const lowerIcon = [<FastfoodIcon />, <LocalHospitalIcon />, <ExploreIcon />];
-
+  const lowerLink = [
+    "https://joedonmalone.github.io/FoodFeed/",
+    "https://github.com/JoeDonMalone/MedFix_Collaboration/",
+  ];
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
@@ -73,9 +83,16 @@ function ResponsiveDrawer(props) {
       <Divider />
       <List>
         {["WeatherBee", "Password Generator"].map((text, index) => (
-          <ListItem button key={text} onClick= { () => {console.log('hello') }}>
+          <ListItem key={text} button>
             <ListItemIcon>{upperIcon[index]}</ListItemIcon>
-            <ListItemText primary={text} />
+            <a
+              className={"garbage-item"}
+              href={upperLink[index]}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ListItemText primary={text} />
+            </a>
           </ListItem>
         ))}
       </List>
@@ -91,19 +108,27 @@ function ResponsiveDrawer(props) {
         {["Food Feed", "Med Reminder", "Travel-App"].map((text, index) => (
           <ListItem button key={text}>
             <ListItemIcon>{lowerIcon[index]}</ListItemIcon>
-            <ListItemText primary={text} />
+            <a
+              className={"garbage-item"}
+              href={lowerLink[index]}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <ListItemText primary={text} />
+            </a>
           </ListItem>
         ))}
       </List>
     </div>
   );
 
-  const container = window !== undefined ? () => window().document.body : undefined;
+  const container =
+    window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <div className={classes.root}>
+    <div className={`${classes.root} side-nav-container`}>
       <CssBaseline />
-      <nav className={classes.drawer} aria-label="mailbox folders">
+      <nav className={`${classes.drawer} side-nav-container`} aria-label="mailbox folders">
         {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
         <Hidden smUp implementation="css">
           <Drawer

@@ -1,9 +1,10 @@
 
 html {
-  font-family: 'Varela Round', sans-serif;
+  
 }
 header {
-min-height: 75px;
+/* min-height: 75px; */
+font-family: 'Varela Round', sans-serif;
 }
 
 

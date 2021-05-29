@@ -11,3 +11,12 @@
     -webkit-overflow-scrolling: touch;
     background-color: #8ea595bf !important;
 }
+
+.garbage-item{
+    text-decoration:none;
+    color: inherit;
+}
+
+.side-nav-container{
+    margin-right: 10px;
+}

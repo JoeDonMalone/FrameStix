@@ -7,6 +7,7 @@ import "./style.css";
 
 function Footer() {
   return (
+    <footer>
    <Container className = {'footer mt-auto py-3 bg-light fixed-bottom'}>
       <div className="container-footer">
         <div className="footer-social-icons">
@@ -27,6 +28,7 @@ function Footer() {
         </div>
       </div>
       </Container>
+      </footer>
   );
 }
 

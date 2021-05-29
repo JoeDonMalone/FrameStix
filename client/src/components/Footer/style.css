@@ -28,12 +28,11 @@
     background: #007bb5;
   }
 
-  footer {
+  .footer {
     width: auto;
     max-width: 100vw;
-    margin-top: 100px;
-    /* padding: 0 15px; */
     text-align: center;
+    background-color: #c4c6c9
   }
 
   .container-footer {

@@ -5,6 +5,7 @@
 
   .image-one {
     order: -3;
+    padding-left:0%;
   }
   .image-three {
     order: -2;

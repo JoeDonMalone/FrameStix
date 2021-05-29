@@ -4,15 +4,15 @@ import "./style.css";
 
 function Image(props) {
   return (
-    <div className={`${props.className}`}>
+    <div className={props.className} style={props.containerStyle}>
       <img
-        className="rounded float-start img-thumbnail"
+        className={`rounded img-thumbnail ${props.floatPosition}`}
         src={props.src}
         alt={props.alt}
-        style={props.style}
+        style={props.imageStyle}
       />
     </div>
   );
 }
-
+// 
 export default Image;
