@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import API from '../../utils/API'
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -29,19 +28,33 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div>
-        <label htmlFor="name">Name:</label>
-        <input type="text" id="name" required />
+      <div className="input-group container">
+        <div className="mb-3">
+          <label htmlFor="name" className="form-label">
+            Name:
+          </label>
+          <input type="text" className="form-control form-control-lg" id="name" required />
+        </div>
+        <div>
+          <label htmlFor="email" className="form-label">
+            Email:
+          </label>
+          <input
+            type="email"
+            className="form-control form-control-lg"
+            id="email"
+            placeholder="name@example.com"
+            required
+          />
+        </div>
+        <div className="mb-3">
+          <label htmlFor="message" className="form-label">
+            What would you like me to know?
+          </label>
+          <textarea className="form-control form-control-lg" id="message" rows="3" required />
+        </div>
+        <button type="submit">{status}</button>
       </div>
-      <div>
-        <label htmlFor="email">Email:</label>
-        <input type="email" id="email" required />
-      </div>
-      <div>
-        <label htmlFor="message">Message:</label>
-        <textarea id="message" required />
-      </div>
-      <button type="submit">{status}</button>
     </form>
   );
 };
