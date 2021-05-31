@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
 
@@ -13,8 +14,10 @@ const ContactForm = () => {
       email: email.value,
       message: message.value,
     };
+    
+    // sendEmail(details)
 
-    let response = await fetch("https://localhost:3001/FrameStix/api/visitors/contact", {
+    let response = await fetch("http://localhost:3001/api/visitors/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
@@ -24,6 +27,40 @@ const ContactForm = () => {
     setStatus("Submit");
     let result = await response.json();
     alert(result.status);
+    
+    // function sendEmail(contactData) {
+    //   console.log(details)
+    //   const name = details.name;
+    //   const email = details.email;
+    //   const message = details.message; 
+    
+    //   let transporter = nodemailer.createTransport({
+    //     host: "smtp.gmail.com",
+    //     port: 587,
+    //     secure: false,
+    //     auth: {
+    //       user: process.env.EMAIL,
+    //       pass: process.env.EMAILPW,
+    //     },
+    //   });
+    
+    //   const mail = {
+    //     from:`${name}`,
+    //     to: process.env.EMAIL,
+    //     subject: `${name} would like to get in touch!`,
+    //     html: `<p>Name: ${name}</p>
+    //            <p>Email: ${email}</p>
+    //            <p>Message: ${message}</p>`,
+    //   };
+    //   transporter.sendMail(mail, (error) => {
+    //     if (error) {
+    //       res.json({ status: "ERROR" });
+    //     } else {
+    //       res.json({ status: "Message Sent" });
+    //     }
+    //   });
+
+
   };
 
   return (

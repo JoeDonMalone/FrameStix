@@ -28,15 +28,6 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
-    "@fortawesome/fontawesome-pro": "^5.15.3",
-    "@fortawesome/fontawesome-svg-core": "^1.2.35",
-    "@fortawesome/free-brands-svg-icons": "^5.15.3",
-    "@fortawesome/free-regular-svg-icons": "^5.15.3",
-    "@fortawesome/free-solid-svg-icons": "^5.15.3",
-    "@fortawesome/pro-duotone-svg-icons": "^5.15.3",
-    "@fortawesome/pro-light-svg-icons": "^5.15.3",
-    "@fortawesome/pro-regular-svg-icons": "^5.15.3",
-    "@fortawesome/pro-solid-svg-icons": "^5.15.3",
     "@fortawesome/react-fontawesome": "^0.1.14",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
