@@ -1,13 +1,9 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { Link } from "react-router-dom";
 import Image from "../components/Images";
-// import DownloadLink from '.'
 import "../components/Nav";
 import ImageOne from "../assets/images/Image1.jpg";
 import Container from "../components/Container";
 import ImageThree from "../assets/images/Image3.jpg";
-import Footer from "../components/Footer";
 import { FaNode } from "react-icons/fa";
 import { FaReact } from "react-icons/fa";
 import { FaPython } from "react-icons/fa";
