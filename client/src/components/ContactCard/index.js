@@ -46,7 +46,6 @@ function ContactCard(props) {
             </div>
             <div className="row">
               <h3 style={{ paddingTop: "20px" }}>
-                {" "}
                 <b>Send me a Message!</b>
               </h3>
             </div>

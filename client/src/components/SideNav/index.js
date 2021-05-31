@@ -14,6 +14,7 @@ import LocalHospitalIcon from "@material-ui/icons/LocalHospital";
 import FastfoodIcon from "@material-ui/icons/Fastfood";
 import LockIcon from "@material-ui/icons/Lock";
 import ExploreIcon from "@material-ui/icons/Explore";
+import PersonIcon from '@material-ui/icons/Person';
 import "./style.css";
 
 const drawerWidth = 240;
@@ -56,12 +57,14 @@ function ResponsiveDrawer(props) {
   const classes = useStyles();
   const theme = useTheme();
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const upperIcon = [<CloudIcon />, <LockIcon />];
+  const upperIcon = [<CloudIcon />, <LockIcon />,<PersonIcon/>];
+  const lowerIcon = [<FastfoodIcon />, <LocalHospitalIcon />, <ExploreIcon />];
   const upperLink = [
     "https://joedonmalone.github.io/WeatherBee/",
     "https://joedonmalone.github.io/Password_Generator/",
+    "https://github.com/JoeDonMalone/Employee-Directory-API"
   ];
-  const lowerIcon = [<FastfoodIcon />, <LocalHospitalIcon />, <ExploreIcon />];
+  
   const lowerLink = [
     "https://joedonmalone.github.io/FoodFeed/",
     "https://github.com/JoeDonMalone/MedFix_Collaboration/",
@@ -81,7 +84,7 @@ function ResponsiveDrawer(props) {
       </ListItem>
       <Divider />
       <List>
-        {["WeatherBee", "Password Generator"].map((text, index) => (
+        {["WeatherBee", "Password Generator", "Employee Directory API"].map((text, index) => (
           <ListItem key={text} button>
             <ListItemIcon>{upperIcon[index]}</ListItemIcon>
             <a
