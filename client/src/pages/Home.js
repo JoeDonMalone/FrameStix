@@ -1,4 +1,6 @@
 import React from "react";
+
+import { Link } from "react-router-dom";
 import Image from "../components/Images";
 import "../components/Nav";
 import ImageOne from "../assets/images/Image1.jpg";
@@ -51,9 +53,9 @@ function Home() {
                 >
                   Resume
                 </a>
-                <a className="get-in-touch button" href="/FrameStix/contact">
+                <Link to="FrameStix/contact" className="get-in-touch button" >
                   Get In Touch
-                </a>
+                </Link>
               </p>
             </div>
             
