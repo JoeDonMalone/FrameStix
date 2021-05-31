@@ -3,8 +3,10 @@ const nodemailer = require("nodemailer");
 
 const visitorsController = require("../../controllers/visitorsController");
 
-// Matches with "/api/visitors"
+// Matches with "FrameStix/api/visitors"
 router.route("/")
+
+
 router.post("/contact", (req, res) => {
   
   const name = req.body.name;

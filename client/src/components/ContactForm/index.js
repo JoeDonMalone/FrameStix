@@ -17,7 +17,7 @@ const ContactForm = () => {
     
     // sendEmail(details)
 
-    let response = await fetch("https://localhost:3001/api/visitors/contact", {
+    let response = await fetch("https://localhost:3001/FrameStix/api/visitors/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
