@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Contact from "../../pages/Contact";
+import ContactCard from "../ContactCard";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
@@ -28,33 +30,41 @@ const ContactForm = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <div className="input-group container">
-        <div className="mb-3">
-          <label htmlFor="name" className="form-label">
-            Name:
-          </label>
-          <input type="text" className="form-control form-control-lg" id="name" required />
-        </div>
-        <div>
-          <label htmlFor="email" className="form-label">
-            Email:
-          </label>
-          <input
-            type="email"
-            className="form-control form-control-lg"
-            id="email"
-            placeholder="name@example.com"
-            required
-          />
-        </div>
-        <div className="mb-3">
-          <label htmlFor="message" className="form-label">
-            What would you like me to know?
-          </label>
-          <textarea className="form-control form-control-lg" id="message" rows="3" required />
-        </div>
-        <button type="submit">{status}</button>
-      </div>
+          <div className="mb-3">
+            <label htmlFor="name" className="form-label">
+              Name:
+            </label>
+            <input
+              type="text"
+              className="form-control form-control-lg"
+              id="name"
+              required
+            />
+          </div>
+          <div>
+            <label htmlFor="email" className="form-label">
+              Email:
+            </label>
+            <input
+              type="email"
+              className="form-control form-control-lg"
+              id="email"
+              placeholder="name@example.com"
+              required
+            />
+          </div>
+          <div className="mb-3">
+            <label htmlFor="message" className="form-label">
+              What would you like me to know?
+            </label>
+            <textarea
+              className="form-control form-control-lg"
+              id="message"
+              rows="3"
+              required
+            />
+          </div>
+          <button type="submit" className = {" btn btn-dark"}>{status}</button>
     </form>
   );
 };

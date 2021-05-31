@@ -74,7 +74,10 @@ function ResponsiveDrawer(props) {
     <div>
       <div className={classes.toolbar} />
       <ListItem>
-        <ListItemText>Personal Projects</ListItemText>
+        <ListItemText>
+          {" "}
+          <b>Personal Projects</b>{" "}
+        </ListItemText>
       </ListItem>
       <Divider />
       <List>
@@ -97,7 +100,10 @@ function ResponsiveDrawer(props) {
       <br />
 
       <ListItem>
-        <ListItemText>Collaborative Projects</ListItemText>
+        <ListItemText>
+          {" "}
+          <b> Collaborative Projects </b>{" "}
+        </ListItemText>
       </ListItem>
       <Divider />
       <List>
@@ -122,40 +128,45 @@ function ResponsiveDrawer(props) {
     window !== undefined ? () => window().document.body : undefined;
 
   return (
-    <div className={`${classes.root} side-nav-container`}>
-      <CssBaseline />
-      <nav className={`${classes.drawer} side-nav-container`} aria-label="mailbox folders">
-        {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
-        <Hidden smUp implementation="css">
-          <Drawer
-            container={container}
-            variant="temporary"
-            anchor={theme.direction === "rtl" ? "right" : "left"}
-            open={mobileOpen}
-            onClose={handleDrawerToggle}
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            ModalProps={{
-              keepMounted: true, // Better open performance on mobile.
-            }}
+    <>
+        <div className={`${classes.root} side-nav-container`}>
+          <CssBaseline />
+          <nav
+            className={`${classes.drawer} side-nav-container`}
+            aria-label="mailbox folders"
           >
-            {drawer}
-          </Drawer>
-        </Hidden>
-        <Hidden xsDown implementation="css">
-          <Drawer
-            classes={{
-              paper: classes.drawerPaper,
-            }}
-            variant="permanent"
-            open
-          >
-            {drawer}
-          </Drawer>
-        </Hidden>
-      </nav>
-    </div>
+            {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
+            <Hidden smUp implementation="css">
+              <Drawer
+                container={container}
+                variant="temporary"
+                anchor={theme.direction === "rtl" ? "right" : "left"}
+                open={mobileOpen}
+                onClose={handleDrawerToggle}
+                classes={{
+                  paper: classes.drawerPaper,
+                }}
+                ModalProps={{
+                  keepMounted: true, // Better open performance on mobile.
+                }}
+              >
+                {drawer}
+              </Drawer>
+            </Hidden>
+            <Hidden xsDown implementation="css">
+              <Drawer
+                classes={{
+                  paper: classes.drawerPaper,
+                }}
+                variant="permanent"
+                open
+              >
+                {drawer}
+              </Drawer>
+            </Hidden>
+          </nav>
+        </div>
+    </>
   );
 }
 

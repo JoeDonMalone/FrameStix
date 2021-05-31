@@ -32,7 +32,6 @@
     width: auto;
     max-width: 100vw;
     text-align: center;
-    background-color: #c4c6c9
   }
 
   .container-footer {
@@ -40,4 +39,6 @@
     max-width: 100vw;
     padding: 0 15px;
     text-align: center;
+    background:#f7f9fa !important;
+
   }

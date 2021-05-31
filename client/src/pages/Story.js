@@ -8,7 +8,7 @@ import "./style.css";
 function Home() {
   return (
     <>
-      <Container className={"d-flex flex-column min-vh-100"} style={{ marginBottom: "20px" }}>
+      <Container className={"d-flex flex-column min-vh-100 home-container"} style={{ marginBottom: "20px" }}>
         <div className = "container">
         <section className="the-story">
           <h1>The Story</h1>

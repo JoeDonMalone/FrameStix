@@ -1,0 +1,8 @@
+.contact-container {
+    display:flex ;
+    justify-content: center !important;
+}
+
+.card-custom {
+    background-color: #8ea595bf
+}

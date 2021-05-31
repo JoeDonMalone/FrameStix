@@ -11,7 +11,6 @@ function Highlights() {
   return (
     <>
       <Container style={{ marginBottom: "20px" }} className = {'preview-container-holder'}>
-        <ResponsiveDrawer/>
         <Preview>
         </Preview>
       </Container>

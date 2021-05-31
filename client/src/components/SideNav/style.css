@@ -9,7 +9,7 @@
     overflow-y: auto;
     flex-direction: column;
     -webkit-overflow-scrolling: touch;
-    background-color: #8ea595bf !important;
+    background-color: #8ea595 !important;
 }
 
 .garbage-item{

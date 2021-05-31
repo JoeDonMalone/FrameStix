@@ -1,2 +1,2 @@
 # FrameStix
-[Go TO Porfolio](https://joedonmalone.github.io/FrameStix/)
+[Framestix](https://joedonmalone.github.io/FrameStix/)
