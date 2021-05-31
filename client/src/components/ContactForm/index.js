@@ -1,6 +1,4 @@
 import React, { useState } from "react";
-import Contact from "../../pages/Contact";
-import ContactCard from "../ContactCard";
 
 const ContactForm = () => {
   const [status, setStatus] = useState("Submit");
