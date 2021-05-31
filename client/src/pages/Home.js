@@ -53,7 +53,7 @@ function Home() {
                 >
                   Resume
                 </a>
-                <Link to="FrameStix/contact" className="get-in-touch button" >
+                <Link to="/contact" className="get-in-touch button" >
                   Get In Touch
                 </Link>
               </p>
