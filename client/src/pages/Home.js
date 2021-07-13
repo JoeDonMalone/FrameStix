@@ -49,7 +49,7 @@ function Home() {
                 <a
                   className="get-in-touch button"
                   download="Joe_Malone_Resume.pdf"
-                  href="././assets/Joe_Malone_Resume.pdf"
+                  href="../assets/Joe_Malone_Resume.pdf"
                 >
                   Resume
                 </a>
