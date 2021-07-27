@@ -16,10 +16,10 @@ function App() {
       <div>
         <Nav />
         <Switch>
-          <Route exact path={"/FrameStix/"} component = {Home}/>
-          <Route exact path="/FrameStix/contact/" component={Contact} />
-          <Route exact path="/FrameStix/highlights/" component={Highlights} />
-          <Route exact path="/FrameStix/story/" component={Story} />
+          <Route exact path={"/"} component = {Home}/>
+          <Route exact path="/contact/" component={Contact} />
+          <Route exact path="/highlights/" component={Highlights} />
+          <Route exact path="/story/" component={Story} />
           <Route><NoMatch /></Route>
         </Switch>
         <Footer/>

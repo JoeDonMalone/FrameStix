@@ -3,12 +3,11 @@ const nodemailer = require("nodemailer");
 
 const visitorsController = require("../../controllers/visitorsController");
 
-// Matches with "FrameStix/api/visitors"
+// Matches with "api/visitors"
 router.route("/")
 
 
 router.post("/contact", (req, res) => {
-  
   const name = req.body.name;
   const email = req.body.email;
   const message = req.body.message; 

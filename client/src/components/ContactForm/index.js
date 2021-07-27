@@ -17,13 +17,14 @@ const ContactForm = () => {
     
     // sendEmail(details)
 
-    let response = await fetch("https://localhost:3001/FrameStix/api/visitors/contact", {
+    let response = await fetch("http://localhost:3001/api/visitors/contact" || "https://localhost:3001/api/visitors/contact" , {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
       },
       body: JSON.stringify(details),
     });
+    
     setStatus("Submit");
     let result = await response.json();
     alert(result.status);
@@ -66,7 +67,7 @@ const ContactForm = () => {
               required
             />
           </div>
-          <button type="submit" className = {" btn btn-dark"}>{status}</button>
+          <button type="submit" className = {" btn btn-dark "}>{status}</button>
     </form>
   );
 };
